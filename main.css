@@ -1,0 +1,115 @@
+.body {
+    position: relative;
+}
+.heart-head {
+    position: absolute;
+    top: 11.80vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: none;
+    animation: fadeIn ease-in 0.5s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.heart-head.open-display {
+    display: block !important;
+}
+.heart-head i {
+    color: #e6668a;
+    font-size: 90px;
+}
+@media (min-width: 390px) and (max-width: 500px) {
+    .heart-head {
+        top: 39vh;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        display: none;
+    }
+    .heart-head i {
+        font-size: 20px;
+    }
+}
+@media (max-width: 390px) {
+    .heart-head {
+        top: 40vh;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        display: none;
+    }
+    .heart-head i {
+        font-size: 20px;
+    }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+    .heart-head {
+        top: 18vh;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        display: none;
+    }
+    .heart-head i {
+        font-size: 30px;
+    }
+}
+@media (min-width: 850px) and (max-width: 900px) {
+    .heart-head {
+        top: 11vh;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        display: none;
+    }
+    .heart-head i {
+        font-size: 40px;
+    }
+}
+.chuc {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left:50%;
+    transform: translateX(-50%);
+    top: 12vh;
+    font-size: 27px;
+    color: red;
+    font-family: 'Style Script', cursive;
+}
+.footer {
+    position: absolute;
+    bottom: 30vh;
+    right: 51%;
+    transform: translateX(50%);
+    color: red;
+    font-weight: 550;
+    font-style: italic;
+    font-family: 'Style Script', cursive;
+    font-size: 27px;
+    
+}
+@media (min-width: 1000px) {
+    .chuc {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        left:50%;
+        transform: translateX(-50%);
+        top: 0vh;
+        font-size: 40px;
+        color: red;
+        font-family: 'Style Script', cursive;
+    }
+}
+
+
